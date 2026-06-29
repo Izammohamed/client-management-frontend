@@ -1,0 +1,84 @@
+/* ==========================================================================
+   Global Scss Styles
+   ========================================================================== */
+
+:root {
+  --primary-color: #1a73e8;
+  --primary-hover: #1557b0;
+  --sidebar-bg: #2d3748;
+  --sidebar-text: #e2e8f0;
+  --sidebar-active-bg: #1a73e8;
+  --bg-color: #f8f9fa;
+  --surface-color: #ffffff;
+  --text-primary: #1a202c;
+  --text-secondary: #718096;
+  --border-color: #e2e8f0;
+  --success-color: #38a169;
+  --warning-color: #d69e2e;
+  --danger-color: #e53e3e;
+}
+
+body {
+  font-family: 'Inter', sans-serif !important;
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+}
+
+.page-title {
+  font-size: 22px;
+  font-weight: 500;
+  color: #1e293b;
+  margin-bottom: 20px;
+}
+
+/* Material Symbols specific */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+  vertical-align: middle;
+}
+
+/* Dashboard Stat Cards */
+.stat-card-blue {
+  background-color: #e0f2fe !important;
+  color: #0284c7 !important;
+}
+.stat-card-green {
+  background-color: #dcfce7 !important;
+  color: #16a34a !important;
+}
+.stat-card-orange {
+  background-color: #ffedd5 !important;
+  color: #ea580c !important;
+}
+.stat-card-purple {
+  background-color: #f3e8ff !important;
+  color: #9333ea !important;
+}
+
+/* Vuetify overrides to match original vanilla design */
+.v-navigation-drawer {
+  background-color: var(--sidebar-bg) !important;
+}
+.v-list-item--active {
+  border-left: 4px solid #60a5fa !important;
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+.v-app-bar {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+.v-card-title {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+  color: #334155 !important;
+}
+.v-data-table th {
+  background-color: #f8fafc !important;
+  font-weight: 600 !important;
+  color: #475569 !important;
+}
